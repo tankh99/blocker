@@ -9,11 +9,8 @@
     "version": "1.0",
     "manifest_version": 3,
     "permissions": [
-        "webRequest",
-        "browsingData",
         "storage",
-        "declarativeNetRequest",
-        "activeTab"
+        "declarativeNetRequest"
     ],
     "host_permissions": [
         "<all_urls>"
