@@ -5,7 +5,10 @@
     "manifest_version": 3,
     "permissions": [
         "webRequest",
-        "declarativeNetRequest"
+        "browsingData",
+        "storage",
+        "declarativeNetRequest",
+        "activeTab"
     ],
     "host_permissions": [
         "<all_urls>"
@@ -13,16 +16,7 @@
     "background": {
         "service_worker": "src/background.js"
     },
-    "declarative_net_request": {
-        "rule_resources": [
-            {
-                "id": "ruleset_1",
-                "enabled": true,
-                "path": "rules.json"
-            }
-        ]
-    },
     "action": {
-        "default_popup": "popup/hello.html"
+        "default_popup": "src/popup/popup.html"
     }
 }
